@@ -19,6 +19,3 @@ def verifDiag(liste):
 
 def verifAll(liste):
     return verifCol(liste) or verifDiag(liste) or verifRow(liste)
-[0, 1, 2,
- 3, 4, 5,
- 6, 7, 8]
