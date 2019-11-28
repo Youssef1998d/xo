@@ -17,5 +17,10 @@ def verifDiag(liste):
         return True
     return False
 
-def verifAll(liste):
+def verifAllWin(liste):
     return verifCol(liste) or verifDiag(liste) or verifRow(liste)
+
+def verifTie(liste):
+    if not verifAllWin(liste) and "-" not in liste:
+        return True
+    return False
